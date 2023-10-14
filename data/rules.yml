@@ -1,0 +1,42 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+
+- rule: Study_strategy_tips
+  steps:
+  - intent: study_strategies
+  - action: provide_study_tips
+
+- rule: Career_guidance
+  steps:
+  - intent: career_guidance
+  - action: provide_career_guidance
+
+- rule: Provide extracurricular activities
+  steps:
+  - intent: inform_activity
+  - action: provide_activities
+
+- rule: Respond to time management request
+  steps:
+    - intent: time_management_tips
+    - action: provide_time_management_tips
+
+
+- rule: Provide motivational advice when user asks for it
+  steps:
+  - intent: ask_motivational_advice
+  - action: action_provide_motivational_advice
+

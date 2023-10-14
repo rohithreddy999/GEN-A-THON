@@ -1,0 +1,441 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: user_wants_to_check_marks
+  examples: |
+    - I would like to know my marks status
+    - Please tell me about my marks
+    - I want to know about my marks
+    - I want to know how many marks I have scored
+    - I want to know how many marks have I missed
+    - I would like to know how many marks have I scored
+    - I would like to know how many marks have I missed
+    - Please display my marks details
+    - Can I know about my marks please
+- intent: user_submitted_usn
+  examples: |
+    - 1ZX01CS0
+    - 1ZX01IS0
+    - 1ZX01ME0
+    - 1ZX01EC0
+    - 1ZX01EE0
+    - 1ZX01CI0
+    - 1ZX02CS0
+    - 1ZX02IS0
+    - 1ZX02ME0
+    - 1ZX02EC0
+    - 1ZX02EE0
+    - 1ZX02CI0
+    - 1ZX03CS0
+    - 1ZX03IS0
+    - 1ZX03ME0
+    - 1ZX03EC0
+    - 1ZX03EE0
+    - 1ZX03CI0
+    - 1ZX04CS0
+    - 1ZX04IS0
+    - 1ZX02IS40
+    - 1ZX02ME40
+    - 1ZX02EC40
+    - 1ZX02EE40
+    - 1ZX02CI40
+    - 1ZX03CS40
+    - 1ZX03IS40
+    - 1ZX03ME40
+    - 1ZX03EC40
+    - 1ZX03EE40
+    - 1ZX03CI40
+    - 1ZX04CS40
+    - 1ZX04IS40
+    - 1ZX04ME40
+    - 1ZX04EC40
+    - 1ZX04EE40
+    - 1ZX04CI40
+    - 1ZX01CS41
+    - 1ZX01IS41
+    - 1ZX01ME41
+    - 1ZX01EC41
+    - 1ZX01EE41
+    - 1ZX01CI41
+    - 1ZX02CS41
+- intent: user_submitted_password
+  examples: |
+    - Ba1ZX256aj
+    - Ra1ZX3914ma
+    - Sh1ZX2130an
+    - Bi1ZX1611al
+    - Am1ZX4712it
+    - Ku1ZX711al
+    - Ka1ZX1043id
+    - Sh1ZX3415sh
+    - Vi1ZX3324gh
+    - Ab1ZX3815hi
+    - Ra1ZX4811ta
+    - Kh1ZX239gh
+    - Gu1ZX311gh
+    - Ch1ZX2746al
+    - Kh1ZX2832id
+    - Ra1ZX1133ev
+    - Na1ZX22gh
+    - Ra1ZX125ar
+    - Su1ZX2817al
+    - Ma1ZX22al
+    - Ro1ZX923it
+    - Sp1ZX1937sh
+    - Pu1ZX218al
+    - Di1ZX1924sh
+    - Ar1ZX941av
+    - Na1ZX3145ad
+    - Md1ZX2317ar
+    - Sh1ZX4742gh
+    - Mo1ZX298al
+    - Ka1ZX3115ar
+    - Mo1ZX2716li
+    - Ja1ZX427gh
+    - Se1ZX839al
+    - Ch1ZX4147al
+    - Ru1ZX4430sh
+    - Mi1ZX471da
+    - Dh1ZX2817gh
+    - Ma1ZX2214oj
+    - Pr1ZX4541ar
+    - Sa1ZX3341in
+    - Pa1ZX4315ar
+    - Sh1ZX1729ir
+    - Ri1ZX4632li
+    - Vi1ZX4843ya
+    - Su1ZX123it
+    - Ar1ZX1228ra
+    - Ba1ZX348an
+    - Vi1ZX1713sh
+    - De1ZX1529da
+    - Mo1ZX745gh
+    - He1ZX4641nt
+    - Sh1ZX4912am
+    - Ya1ZX3811al
+    - Aa1ZX2626sh
+    - Ch1ZX2646sh
+    - Su1ZX112ra
+    - Su1ZX1629en
+    - Ga1ZX4114dy
+    - Po1ZX284ma
+    - Az1ZX1440in
+    - Mu1ZX1919av
+    - Ma1ZX61oj
+    - Sa1ZX4424ee
+    - Ra1ZX227bu
+    - Ra1ZX1525la
+    - Mo1ZX3744ah
+    - Ne1ZX96ar
+    - Ja1ZX1918an
+    - Ri1ZX343al
+    - Mo1ZX446ib
+    - Ra1ZX4343ar
+    - Ra1ZX4347er
+    - Su1ZX424aj
+    - Ri1ZX4030an
+    - Md1ZX3029fa
+    - Ha1ZX4227ad
+    - Ra1ZX3040ul
+    - Ab1ZX138kh
+    - Sh1ZX2243av
+    - An1ZX3911it
+    - Mo1ZX3842ib
+    - Su1ZX318an
+    - Ar1ZX422un
+    - Ra1ZX4946ma
+    - Ke1ZX2722ri
+    - Ra1ZX33tu
+    - Ku1ZX391gh
+    - Sa1ZX1647lu
+    - La1ZX4224na
+    - Pu1ZX4213ma
+    - Am1ZX238al
+    - Ja1ZX728er
+    - Ta1ZX3325ne
+    - Ka1ZX17ar
+    - Bh1ZX2225ad
+    - Aj1ZX3015ay
+    - Si1ZX1831er
+    - Ak1ZX3726sh
+    - Di1ZX4727ar
+    - Ni1ZX2342in
+
+- intent: user_wants_to_check_upcoming_holidays
+  examples: |
+    - I would like to know about events for this month
+    - Show me this month's holidays
+    - When is my next holiday
+    - I want to know about holidays
+    - Can you please tell me about upcoming holidays
+    - can i know Tomorrow Schedule
+    - When is my next day off or holiday?
+    - Can you provide information about upcoming holidays?
+    - Tell me about the holidays in the near future.
+    - What's the schedule for tomorrow?
+    - Can you inform me about events and holidays this month?
+    - When can I expect the next day off or vacation?
+    - Share details about upcoming events and holidays.
+    - I want to know the holiday schedule for tomorrow.
+    - Can you provide information on this month's calendar?
+    - When is the next day of rest or break?
+    - Tell me about the holidays and events for the current month.
+    - What's happening in terms of holidays soon?
+    - When is my next day of leisure?
+    - Can you provide information about the upcoming schedule?
+    - I'm interested in knowing what's coming up this month.
+    - Share the details of tomorrow's schedule and activities.
+    - When is my next day without work or classes?
+    - Tell me about the events and holidays in the near future.
+- intent: user_wants_to_check_admission_status
+  examples: |
+    - Tell me about admissions
+    - When will admissions happen
+    - When is the next intake
+    - When is the admissions of students taking place
+    - Can you please tell me about the admissions
+    - Can you please tell me about the next intake
+    - Tell me about the next intake
+    - Can you provide details about the upcoming intake?
+    - When can I apply for admission?
+    - When does the next admissions process start?
+    - What's the admission timeline?
+    - I want to know more about the admissions process.
+    - When are applications for the next intake accepted?
+    - Tell me about admission requirements and deadlines.
+    - Can you inform me about admission dates?
+    - What's the schedule for student admissions?
+    - When is the next enrollment period?
+    - Share information on admissions for the upcoming semester.
+    - When can I apply for admission to the university?
+    - Tell me about the application process for admissions.
+    - Can you provide details on student admissions?
+- intent: study_strategies
+  examples: |
+    - How can I improve my study habits?
+    - Give me tips for effective studying
+    - What are some time management techniques?
+    - How do I enhance my learning techniques?
+    - Give me strategies for successful studying.
+    - Share insights on optimizing my study habits.
+    - What are some effective study methods?
+    - Can you provide advice on managing study time effectively?
+    - What's the secret to successful exam preparation?
+    - How can I make the most out of my study sessions?
+    - Share tips for more productive studying.
+    - Can you suggest ways to enhance my learning methods?
+    - Provide strategies for acing my exams.
+    - How can I make my study sessions more efficient?
+    - Share insights on effective study methods.
+    - What are the keys to successful exam preparation?
+    - How do I maximize my study time effectively?
+    - Can you offer advice on mastering study habits?
+    - What are some proven methods for improving study habits?
+    - Give me guidance on becoming a better student.
+    - How can I excel in my academic performance?
+    - Share tips on successful learning and study habits.
+    - What are some study techniques that work well?
+    - Can you provide guidance on time management for studying?
+    - How can I be more successful in my academic pursuits?
+    - Share strategies for achieving high study performance.
+    - What are the secrets to becoming a successful student?
+    - How can I make my study time more valuable?
+    - Share techniques for mastering my coursework.
+- intent: career_guidance
+  examples: |
+    - Tell me about career options in science
+    - What jobs require a background in technology?
+    - How do I choose a career path?
+    - What jobs can I pursue with a degree in engineering?
+    - Give me insights into careers in the field of finance.
+    - How can I explore careers related to art and design?
+    - Tell me about opportunities in the hospitality and tourism industry.
+    - What are the career possibilities in computer science and programming?
+    - How do I choose a career path that aligns with my passion and interests?
+    - What are the options for a career in education and teaching?
+    - Tell me about job prospects in the field of psychology.
+    - How can I make a career choice that offers work-life balance?
+    - What careers can I explore in the renewable energy sector?
+    - How do I find a fulfilling career that matches my values and goals?
+- intent: inform_activity
+  examples: |
+    - What extracurricular activities are available?
+    - Tell me about clubs and activities.
+    - Can you list some extracurricular options?
+    - Share information on available extracurriculars.
+    - Tell me about after-school activities.
+    - What are the available student clubs?
+    - Inform me about co-curricular opportunities.
+    - Are there any academic clubs?
+    - Share details about clubs and groups.
+    - Tell me about student involvement options.
+    - Share information about available clubs and groups.
+    - Are there any academic or cultural clubs?
+    - Tell me about the clubs and teams I can join.
+    - Can you list the student organizations?
+    - Provide details on available co-curricular opportunities.
+    - I want to get involved, tell me more about student associations.
+    - Share information about the available clubs on campus.
+- intent: provide_activity
+  examples: |
+    - There are several extracurricular activities available, including coding club, drama club, and sports teams.
+    - We have a variety of extracurricular activities, such as chess club and photography club.
+    - You can also explore extracurricular activities like debate club, environmental club, and art club.
+    - Our university offers a wide range of options, including robotics club, music band, and the science Olympiad team.
+    - Some of the available activities include student government, volunteering club, and a literary magazine.
+    - Students can participate in extracurriculars such as yearbook committee, theater productions, and a community service club.
+    - Other options include math club, model United Nations, and a coding competition team.
+    - In addition to the mentioned clubs, there's also a dance team, a cultural exchange club, and a gardening club.
+    - You'll find opportunities in clubs like entrepreneurship, film production, and a creative writing workshop.
+    - Students can engage in activities such as the astronomy club, a school newspaper, and a cooking club.
+    - There are even more extracurriculars like a hiking club, a language exchange program, and a debate society.
+    - Some additional options include a film appreciation club, a photography exhibition group, and a fitness club.
+- intent: time_management_tips
+  examples: |
+    - Can you give me some time management tips?
+    - I need help with managing my time.
+    - How can I improve my time management skills?
+    - I want to be more productive, what should I do?
+    - Help me make the most of my time.
+    - What time management tips do you recommend?
+    - Provide guidance on managing my time effectively.
+    - Share time management hacks.
+    - How can I better prioritize my tasks and time?
+    - Give me some time management tricks.
+    - Help me become a better time manager.
+    - How can I be more efficient in my daily routines?
+    - What strategies can help me balance my schedule effectively?
+    - Share tips on organizing my tasks and priorities.
+    - I need advice on making the most of my available hours.
+    - What techniques can I use to boost my productivity?
+    - Provide guidance on planning and optimizing my day.
+    - Help me better allocate my resources and tasks.
+    - How do I improve my daily task handling?
+    - I want to be more effective in my work. What should I do?
+    - Share insights on structuring my day for success.
+    - Can you offer suggestions for handling deadlines and tasks?
+    - What are some strategies for achieving my goals efficiently?
+    - Share ideas on enhancing my personal and professional effectiveness.
+    - How can I create a well-structured daily routine?
+    - Offer advice on achieving a work-life balance.
+- intent: ask_motivational_advice
+  examples: |
+    - Give me some motivation
+    - I need motivation
+    - Inspire me
+    - Please share some motivational words.
+    - How can I stay motivated?
+    - Share a motivational quote, please.
+    - Inspire me to get started.
+    - I'm struggling with motivation, any tips?
+    - Motivate me to achieve my goals.
+    - Offer some words of encouragement.
+    - I'm feeling stuck, can you provide some motivation?
+    - Share some words to inspire me.
+    - Offer encouragement to boost my spirits.
+    - How can I stay focused and determined?
+    - Help me find the drive to keep going.
+    - Provide guidance to stay on the path to success.
+    - Inspire me to tackle challenges.
+    - I'm looking for a lift in my energy and enthusiasm.
+    - Give me a positive mindset for the day.
+    - Offer a motivational quote to ignite my day.
+    - Share insights on maintaining a determined mindset.
+    - Can you provide a source of strength to overcome obstacles?
+    - I need a little extra something to reach my objectives.
+    - Help me stay committed to my aspirations.
+    - Provide a dose of positivity for my journey.
+    - Inspire me to pursue my dreams with resilience.
+    - Share encouragement to keep me on track.
+    - I'm facing hurdles; please guide me to overcome them.
+    - How can I maintain a positive outlook in challenging times?

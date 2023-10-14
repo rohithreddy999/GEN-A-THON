@@ -1,0 +1,69 @@
+version: "2.0"
+
+stories:
+
+
+
+- story: User wants to check marks
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: user_wants_to_check_marks
+  - action: action_ask_usn
+  - intent: user_submitted_usn
+  - action: action_ask_password
+  - intent: user_submitted_password
+  - action: validate_credentials_and_display_marks
+- story: fallback
+  steps:
+  - intent: fallback
+  - action: action_default_fallback
+
+
+
+
+
+- story: User wants to check upcoming holidays
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: user_wants_to_check_upcoming_holidays
+  - action: display_upcoming_holidays
+
+
+- story: User wants to check admission status
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: user_wants_to_check_admission_status
+  - action: action_admission_info
+
+
+
+- story: Study_strategy_path
+  steps:
+  - intent: study_strategies
+  - action: provide_study_tips
+
+- story: Career_guidance_path
+  steps:
+  - intent: career_guidance
+  - action: provide_career_guidance
+
+- story: Extracurricular activity inquiry
+  steps:
+  - intent: inform_activity
+  - action: provide_activities
+
+- story: Time Management Tips Request
+  steps:
+    - intent: time_management_tips
+    - action: provide_time_management_tips
+
+- story: User asks for motivational advice
+  steps:
+  - action: action_provide_motivational_advice
+- story: fallback
+  steps:
+  - intent: fallback
+  - action: action_default_fallback
