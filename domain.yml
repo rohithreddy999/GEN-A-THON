@@ -1,0 +1,86 @@
+session_config:
+  session_expiration_time: 100000
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- user_submitted_password
+- user_wants_to_check_attendance
+- user_submitted_usn
+- user_wants_to_check_upcoming_holidays
+- user_wants_to_check_marks
+- user_wants_to_check_admission_status
+- study_strategies
+- career_guidance
+- inform_activity
+- provide_activities
+- time_management_tips
+- ask_motivational_advice
+
+responses:
+  utter_greet:
+  - buttons:
+    - payload: I would like to know about my marks
+      title: Marks
+    - payload: Tell me about admissions
+      title: Admissions information
+    - payload: How do I choose a career path?
+      title: Career guidance
+    - payload: Give me tips for extracurricular activities
+      title: Extracurricular activities
+    - payload: I would like to know about events for this month
+      title: Holidays
+    - payload: can i get some motivational advices
+      title: Motivational advices
+    - payload: Give me tips for effective studying
+      title: Study tips
+    - payload: Give me tips for time management
+      title: Time management tips
+    text: Hey! Hope you are doing well. Below are few of the suggestions
+
+  utter_ask_usn:
+  - text: Please enter your University seat number
+  utter_ask_password:
+  - text: Please enter your password
+  utter_admission_info:
+  - text: The admission for 2023 will happen in September
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Have a good day!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_activities:
+  - text: "Here are some extracurricular activities available at our university: Coding club, drama club, sports teams, chess club, and photography club."
+  utter_time_management_tips:
+    - text: |
+        Sure! Here are some time management tips:1.Prioritize your tasks.2.Set clear goals and deadlines.3.Use time management tools like calendars.4.Avoid multitasking.5.Take short breaks to recharge.
+  utter_ask_motivational_advice:
+    - text: "Sure! Here's some motivational advice: {action_provide_motivational_advice}"
+actions:
+- validate_credentials_and_display_marks
+- action_admission_info
+- action_ask_password
+- action_ask_usn
+- display_upcoming_holidays
+- provide_study_tips
+- provide_career_guidance
+- provide_activities
+- provide_time_management_tips
+- action_provide_motivational_advice
+- action_default_fallback
+
+
+
+
+
+
+
+
+
+
